@@ -1,0 +1,4 @@
+magazine
+========
+
+a magazine app
