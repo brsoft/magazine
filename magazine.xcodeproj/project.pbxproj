@@ -32,6 +32,34 @@
 		4C406C16165D2C1300D5BBCF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C406C15165D2C1300D5BBCF /* CoreData.framework */; };
 		4C406C1F165D2CD100D5BBCF /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C406C18165D2C4B00D5BBCF /* WelcomeViewController.m */; };
 		4C406C21165D390C00D5BBCF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C406C20165D390C00D5BBCF /* QuartzCore.framework */; };
+		4C406C2A165E712300D5BBCF /* ArticleBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C406C28165E712300D5BBCF /* ArticleBaseViewController.m */; };
+		4C406C2B165E712300D5BBCF /* ArticleBaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C406C29165E712300D5BBCF /* ArticleBaseViewController.xib */; };
+		4C406C2F165E717F00D5BBCF /* PhotoBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C406C2D165E717F00D5BBCF /* PhotoBaseViewController.m */; };
+		4C406C30165E717F00D5BBCF /* PhotoBaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C406C2E165E717F00D5BBCF /* PhotoBaseViewController.xib */; };
+		4C406C34165E719C00D5BBCF /* PostBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C406C32165E719C00D5BBCF /* PostBaseViewController.m */; };
+		4C406C35165E719C00D5BBCF /* PostBaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C406C33165E719C00D5BBCF /* PostBaseViewController.xib */; };
+		4C406C39165E71EA00D5BBCF /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C406C37165E71EA00D5BBCF /* SettingViewController.m */; };
+		4C406C3A165E71EA00D5BBCF /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C406C38165E71EA00D5BBCF /* SettingViewController.xib */; };
+		4C406C3E165E754C00D5BBCF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C406C3C165E754A00D5BBCF /* HomeViewController.m */; };
+		4C406C3F165E754C00D5BBCF /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C406C3D165E754B00D5BBCF /* HomeViewController.xib */; };
+		4C406C43165E7E6700D5BBCF /* ArticleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C406C41165E7E6700D5BBCF /* ArticleListViewController.m */; };
+		4C406C44165E7E6700D5BBCF /* ArticleListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C406C42165E7E6700D5BBCF /* ArticleListViewController.xib */; };
+		4C406C48165E7ED500D5BBCF /* PhotoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C406C46165E7ED500D5BBCF /* PhotoListViewController.m */; };
+		4C406C49165E7ED500D5BBCF /* PhotoListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C406C47165E7ED500D5BBCF /* PhotoListViewController.xib */; };
+		4C406C4D165E7F0F00D5BBCF /* PostListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C406C4B165E7F0F00D5BBCF /* PostListViewController.m */; };
+		4C406C4E165E7F0F00D5BBCF /* PostListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C406C4C165E7F0F00D5BBCF /* PostListViewController.xib */; };
+		4C406C58165E828000D5BBCF /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C406C4F165E828000D5BBCF /* blueArrow.png */; };
+		4C406C59165E828000D5BBCF /* blueArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C406C50165E828000D5BBCF /* blueArrow@2x.png */; };
+		4C406C5A165E828000D5BBCF /* info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C406C51165E828000D5BBCF /* info@2x.png */; };
+		4C406C5B165E828000D5BBCF /* more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C406C52165E828000D5BBCF /* more@2x.png */; };
+		4C406C5C165E828000D5BBCF /* setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C406C53165E828000D5BBCF /* setting@2x.png */; };
+		4C406C5D165E828000D5BBCF /* share_sina.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C406C54165E828000D5BBCF /* share_sina.png */; };
+		4C406C5E165E828000D5BBCF /* share_tencent.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C406C55165E828000D5BBCF /* share_tencent.png */; };
+		4C406C5F165E828000D5BBCF /* share@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C406C56165E828000D5BBCF /* share@2x.png */; };
+		4C406C60165E828000D5BBCF /* weibo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C406C57165E828000D5BBCF /* weibo@2x.png */; };
+		4C406C66165E915200D5BBCF /* Setting.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C406C65165E915200D5BBCF /* Setting.m */; };
+		4C406C69165E916300D5BBCF /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C406C68165E916300D5BBCF /* Article.m */; };
+		4C406C6C165E917000D5BBCF /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C406C6B165E917000D5BBCF /* Post.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +95,45 @@
 		4C406C17165D2C4B00D5BBCF /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
 		4C406C18165D2C4B00D5BBCF /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
 		4C406C20165D390C00D5BBCF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4C406C27165E712300D5BBCF /* ArticleBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleBaseViewController.h; sourceTree = "<group>"; };
+		4C406C28165E712300D5BBCF /* ArticleBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleBaseViewController.m; sourceTree = "<group>"; };
+		4C406C29165E712300D5BBCF /* ArticleBaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleBaseViewController.xib; sourceTree = "<group>"; };
+		4C406C2C165E717F00D5BBCF /* PhotoBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoBaseViewController.h; sourceTree = "<group>"; };
+		4C406C2D165E717F00D5BBCF /* PhotoBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoBaseViewController.m; sourceTree = "<group>"; };
+		4C406C2E165E717F00D5BBCF /* PhotoBaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoBaseViewController.xib; sourceTree = "<group>"; };
+		4C406C31165E719C00D5BBCF /* PostBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostBaseViewController.h; sourceTree = "<group>"; };
+		4C406C32165E719C00D5BBCF /* PostBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostBaseViewController.m; sourceTree = "<group>"; };
+		4C406C33165E719C00D5BBCF /* PostBaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostBaseViewController.xib; sourceTree = "<group>"; };
+		4C406C36165E71EA00D5BBCF /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		4C406C37165E71EA00D5BBCF /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		4C406C38165E71EA00D5BBCF /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		4C406C3B165E754900D5BBCF /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		4C406C3C165E754A00D5BBCF /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		4C406C3D165E754B00D5BBCF /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		4C406C40165E7E6700D5BBCF /* ArticleListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleListViewController.h; sourceTree = "<group>"; };
+		4C406C41165E7E6700D5BBCF /* ArticleListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleListViewController.m; sourceTree = "<group>"; };
+		4C406C42165E7E6700D5BBCF /* ArticleListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleListViewController.xib; sourceTree = "<group>"; };
+		4C406C45165E7ED500D5BBCF /* PhotoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoListViewController.h; sourceTree = "<group>"; };
+		4C406C46165E7ED500D5BBCF /* PhotoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoListViewController.m; sourceTree = "<group>"; };
+		4C406C47165E7ED500D5BBCF /* PhotoListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoListViewController.xib; sourceTree = "<group>"; };
+		4C406C4A165E7F0F00D5BBCF /* PostListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostListViewController.h; sourceTree = "<group>"; };
+		4C406C4B165E7F0F00D5BBCF /* PostListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostListViewController.m; sourceTree = "<group>"; };
+		4C406C4C165E7F0F00D5BBCF /* PostListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostListViewController.xib; sourceTree = "<group>"; };
+		4C406C4F165E828000D5BBCF /* blueArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blueArrow.png; path = Resources/blueArrow.png; sourceTree = "<group>"; };
+		4C406C50165E828000D5BBCF /* blueArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "blueArrow@2x.png"; path = "Resources/blueArrow@2x.png"; sourceTree = "<group>"; };
+		4C406C51165E828000D5BBCF /* info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "info@2x.png"; path = "Resources/info@2x.png"; sourceTree = "<group>"; };
+		4C406C52165E828000D5BBCF /* more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "more@2x.png"; path = "Resources/more@2x.png"; sourceTree = "<group>"; };
+		4C406C53165E828000D5BBCF /* setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "setting@2x.png"; path = "Resources/setting@2x.png"; sourceTree = "<group>"; };
+		4C406C54165E828000D5BBCF /* share_sina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = share_sina.png; path = Resources/share_sina.png; sourceTree = "<group>"; };
+		4C406C55165E828000D5BBCF /* share_tencent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = share_tencent.png; path = Resources/share_tencent.png; sourceTree = "<group>"; };
+		4C406C56165E828000D5BBCF /* share@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "share@2x.png"; path = "Resources/share@2x.png"; sourceTree = "<group>"; };
+		4C406C57165E828000D5BBCF /* weibo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "weibo@2x.png"; path = "Resources/weibo@2x.png"; sourceTree = "<group>"; };
+		4C406C64165E915200D5BBCF /* Setting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Setting.h; sourceTree = "<group>"; };
+		4C406C65165E915200D5BBCF /* Setting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Setting.m; sourceTree = "<group>"; };
+		4C406C67165E916300D5BBCF /* Article.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Article.h; sourceTree = "<group>"; };
+		4C406C68165E916300D5BBCF /* Article.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Article.m; sourceTree = "<group>"; };
+		4C406C6A165E917000D5BBCF /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
+		4C406C6B165E917000D5BBCF /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +156,6 @@
 		4C406B67165CFA5C00D5BBCF = {
 			isa = PBXGroup;
 			children = (
-				4C406C20165D390C00D5BBCF /* QuartzCore.framework */,
 				4C406B7C165CFA5C00D5BBCF /* magazine */,
 				4C406B75165CFA5C00D5BBCF /* Frameworks */,
 				4C406B73165CFA5C00D5BBCF /* Products */,
@@ -108,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				4C406BF7165D0AA100D5BBCF /* libxml2.dylib */,
+				4C406C20165D390C00D5BBCF /* QuartzCore.framework */,
 				4C406C15165D2C1300D5BBCF /* CoreData.framework */,
 				4C406B76165CFA5C00D5BBCF /* UIKit.framework */,
 				4C406B78165CFA5C00D5BBCF /* Foundation.framework */,
@@ -149,6 +216,15 @@
 		4C406BA2165CFBDF00D5BBCF /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				4C406C4F165E828000D5BBCF /* blueArrow.png */,
+				4C406C50165E828000D5BBCF /* blueArrow@2x.png */,
+				4C406C51165E828000D5BBCF /* info@2x.png */,
+				4C406C52165E828000D5BBCF /* more@2x.png */,
+				4C406C53165E828000D5BBCF /* setting@2x.png */,
+				4C406C54165E828000D5BBCF /* share_sina.png */,
+				4C406C55165E828000D5BBCF /* share_tencent.png */,
+				4C406C56165E828000D5BBCF /* share@2x.png */,
+				4C406C57165E828000D5BBCF /* weibo@2x.png */,
 				4C406C03165D1BF100D5BBCF /* arrow-left.png */,
 				4C406C04165D1BF100D5BBCF /* arrow-right.png */,
 				4C406C05165D1BF100D5BBCF /* arrows.png */,
@@ -180,11 +256,16 @@
 		4C406BA5165CFC2000D5BBCF /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
-				4C406C17165D2C4B00D5BBCF /* WelcomeViewController.h */,
-				4C406C18165D2C4B00D5BBCF /* WelcomeViewController.m */,
-				4C406BA7165CFCC300D5BBCF /* xib */,
+				4C406C26165E70CA00D5BBCF /* Setting */,
+				4C406C25165E708300D5BBCF /* Posts */,
+				4C406C24165E704100D5BBCF /* Photoes */,
+				4C406C23165E702E00D5BBCF /* Articles */,
+				4C406C22165E701A00D5BBCF /* Welcome */,
 				4C406BF9165D106100D5BBCF /* BaseViewController.h */,
 				4C406BFA165D106100D5BBCF /* BaseViewController.m */,
+				4C406C3B165E754900D5BBCF /* HomeViewController.h */,
+				4C406C3C165E754A00D5BBCF /* HomeViewController.m */,
+				4C406C3D165E754B00D5BBCF /* HomeViewController.xib */,
 			);
 			name = iPhone;
 			sourceTree = "<group>";
@@ -192,16 +273,97 @@
 		4C406BA6165CFC4900D5BBCF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4C406C63165E911E00D5BBCF /* Setting */,
+				4C406C62165E911300D5BBCF /* Post */,
+				4C406C61165E910900D5BBCF /* Article */,
 			);
 			name = Model;
 			sourceTree = "<group>";
 		};
-		4C406BA7165CFCC300D5BBCF /* xib */ = {
+		4C406C22165E701A00D5BBCF /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
 				4C406BF4165D063C00D5BBCF /* WelcomeViewController.xib */,
+				4C406C17165D2C4B00D5BBCF /* WelcomeViewController.h */,
+				4C406C18165D2C4B00D5BBCF /* WelcomeViewController.m */,
 			);
-			name = xib;
+			name = Welcome;
+			sourceTree = "<group>";
+		};
+		4C406C23165E702E00D5BBCF /* Articles */ = {
+			isa = PBXGroup;
+			children = (
+				4C406C27165E712300D5BBCF /* ArticleBaseViewController.h */,
+				4C406C28165E712300D5BBCF /* ArticleBaseViewController.m */,
+				4C406C29165E712300D5BBCF /* ArticleBaseViewController.xib */,
+				4C406C40165E7E6700D5BBCF /* ArticleListViewController.h */,
+				4C406C41165E7E6700D5BBCF /* ArticleListViewController.m */,
+				4C406C42165E7E6700D5BBCF /* ArticleListViewController.xib */,
+			);
+			name = Articles;
+			sourceTree = "<group>";
+		};
+		4C406C24165E704100D5BBCF /* Photoes */ = {
+			isa = PBXGroup;
+			children = (
+				4C406C2C165E717F00D5BBCF /* PhotoBaseViewController.h */,
+				4C406C2D165E717F00D5BBCF /* PhotoBaseViewController.m */,
+				4C406C2E165E717F00D5BBCF /* PhotoBaseViewController.xib */,
+				4C406C45165E7ED500D5BBCF /* PhotoListViewController.h */,
+				4C406C46165E7ED500D5BBCF /* PhotoListViewController.m */,
+				4C406C47165E7ED500D5BBCF /* PhotoListViewController.xib */,
+			);
+			name = Photoes;
+			sourceTree = "<group>";
+		};
+		4C406C25165E708300D5BBCF /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				4C406C31165E719C00D5BBCF /* PostBaseViewController.h */,
+				4C406C32165E719C00D5BBCF /* PostBaseViewController.m */,
+				4C406C33165E719C00D5BBCF /* PostBaseViewController.xib */,
+				4C406C4A165E7F0F00D5BBCF /* PostListViewController.h */,
+				4C406C4B165E7F0F00D5BBCF /* PostListViewController.m */,
+				4C406C4C165E7F0F00D5BBCF /* PostListViewController.xib */,
+			);
+			name = Posts;
+			sourceTree = "<group>";
+		};
+		4C406C26165E70CA00D5BBCF /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				4C406C36165E71EA00D5BBCF /* SettingViewController.h */,
+				4C406C37165E71EA00D5BBCF /* SettingViewController.m */,
+				4C406C38165E71EA00D5BBCF /* SettingViewController.xib */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
+		4C406C61165E910900D5BBCF /* Article */ = {
+			isa = PBXGroup;
+			children = (
+				4C406C67165E916300D5BBCF /* Article.h */,
+				4C406C68165E916300D5BBCF /* Article.m */,
+			);
+			name = Article;
+			sourceTree = "<group>";
+		};
+		4C406C62165E911300D5BBCF /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				4C406C6A165E917000D5BBCF /* Post.h */,
+				4C406C6B165E917000D5BBCF /* Post.m */,
+			);
+			name = Post;
+			sourceTree = "<group>";
+		};
+		4C406C63165E911E00D5BBCF /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				4C406C64165E915200D5BBCF /* Setting.h */,
+				4C406C65165E915200D5BBCF /* Setting.m */,
+			);
+			name = Setting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +432,23 @@
 				4C406C12165D1BF100D5BBCF /* mm004.png in Resources */,
 				4C406C13165D1BF100D5BBCF /* mm005.png in Resources */,
 				4C406C14165D1BF100D5BBCF /* mm006.png in Resources */,
+				4C406C2B165E712300D5BBCF /* ArticleBaseViewController.xib in Resources */,
+				4C406C30165E717F00D5BBCF /* PhotoBaseViewController.xib in Resources */,
+				4C406C35165E719C00D5BBCF /* PostBaseViewController.xib in Resources */,
+				4C406C3A165E71EA00D5BBCF /* SettingViewController.xib in Resources */,
+				4C406C3F165E754C00D5BBCF /* HomeViewController.xib in Resources */,
+				4C406C44165E7E6700D5BBCF /* ArticleListViewController.xib in Resources */,
+				4C406C49165E7ED500D5BBCF /* PhotoListViewController.xib in Resources */,
+				4C406C4E165E7F0F00D5BBCF /* PostListViewController.xib in Resources */,
+				4C406C58165E828000D5BBCF /* blueArrow.png in Resources */,
+				4C406C59165E828000D5BBCF /* blueArrow@2x.png in Resources */,
+				4C406C5A165E828000D5BBCF /* info@2x.png in Resources */,
+				4C406C5B165E828000D5BBCF /* more@2x.png in Resources */,
+				4C406C5C165E828000D5BBCF /* setting@2x.png in Resources */,
+				4C406C5D165E828000D5BBCF /* share_sina.png in Resources */,
+				4C406C5E165E828000D5BBCF /* share_tencent.png in Resources */,
+				4C406C5F165E828000D5BBCF /* share@2x.png in Resources */,
+				4C406C60165E828000D5BBCF /* weibo@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +463,17 @@
 				4C406B83165CFA5C00D5BBCF /* main.m in Sources */,
 				4C406B87165CFA5C00D5BBCF /* AppDelegate.m in Sources */,
 				4C406BFB165D106100D5BBCF /* BaseViewController.m in Sources */,
+				4C406C2A165E712300D5BBCF /* ArticleBaseViewController.m in Sources */,
+				4C406C2F165E717F00D5BBCF /* PhotoBaseViewController.m in Sources */,
+				4C406C34165E719C00D5BBCF /* PostBaseViewController.m in Sources */,
+				4C406C39165E71EA00D5BBCF /* SettingViewController.m in Sources */,
+				4C406C3E165E754C00D5BBCF /* HomeViewController.m in Sources */,
+				4C406C43165E7E6700D5BBCF /* ArticleListViewController.m in Sources */,
+				4C406C48165E7ED500D5BBCF /* PhotoListViewController.m in Sources */,
+				4C406C4D165E7F0F00D5BBCF /* PostListViewController.m in Sources */,
+				4C406C66165E915200D5BBCF /* Setting.m in Sources */,
+				4C406C69165E916300D5BBCF /* Article.m in Sources */,
+				4C406C6C165E917000D5BBCF /* Post.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

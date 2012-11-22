@@ -29,5 +29,6 @@
 - (void) startImageTimer;
 - (void) startAutoHiddenTimer;
 - (void) goToNextImage;
+- (void) goHomeScreen;
 
 @end

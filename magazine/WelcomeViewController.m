@@ -8,6 +8,7 @@
 
 #import "WelcomeViewController.h"
 #import "Constants.h"
+#import "HomeViewController.h"
 
 @interface WelcomeViewController ()
 
@@ -48,7 +49,7 @@
 }
 
 - (void)initNavigation {
-    UIBarButtonItem *homeBtn = [[UIBarButtonItem alloc] initWithTitle:BTN_TITLE_HOME style:UIBarButtonItemStylePlain target:self action:nil];
+    UIBarButtonItem *homeBtn = [[UIBarButtonItem alloc] initWithTitle:BTN_TITLE_HOME style:UIBarButtonItemStylePlain target:self action:@selector(goHomeScreen)];
     self.navigationItem.leftBarButtonItem = homeBtn;
     [homeBtn release];
 }
@@ -179,10 +180,21 @@
     [recongnizer release];
 }
 
+- (void)goHomeScreen {
+    HomeViewController *homeView = [[HomeViewController alloc] init];
+//    [self.navigationController pushViewController:homeView animated:NO];
+//    [homeView release];
+    
+    self.view.window.rootViewController = homeView;
+    [self.view.window makeKeyAndVisible];
+}
+
 - (void)clickOnImageView:(UITapGestureRecognizer *)recognizer {
-    [self setLeftRightButtonHidden:NO];
-    [self startAutoHiddenTimer];
-    [self.view removeGestureRecognizer:recognizer];
+//    [self setLeftRightButtonHidden:NO];
+//    [self startAutoHiddenTimer];
+//    [self.view removeGestureRecognizer:recognizer];
+    [self goHomeScreen];
+    //[self.view removeGestureRecognizer:recognizer];
 }
 
 - (void)dealloc {

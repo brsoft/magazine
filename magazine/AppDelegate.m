@@ -14,7 +14,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.navigationController = [[UINavigationController alloc] init];
+    //self.navigationController = [[UINavigationController alloc] init];
     // Override point for customization after application launch.
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
         self.viewController = [[WelcomeViewController alloc] initWithNibName:@"WelcomeViewController" bundle:nil];
@@ -22,8 +22,8 @@
         //todo
     }
     
-    [self.navigationController pushViewController:self.viewController animated:NO];
-    self.window.rootViewController = self.navigationController;
+    //[self.navigationController pushViewController:self.viewController animated:NO];
+    self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
 }
