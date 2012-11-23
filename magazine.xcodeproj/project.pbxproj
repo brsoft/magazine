@@ -60,6 +60,11 @@
 		4C406C66165E915200D5BBCF /* Setting.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C406C65165E915200D5BBCF /* Setting.m */; };
 		4C406C69165E916300D5BBCF /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C406C68165E916300D5BBCF /* Article.m */; };
 		4C406C6C165E917000D5BBCF /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C406C6B165E917000D5BBCF /* Post.m */; };
+		4C406C7B165FC9FF00D5BBCF /* ArticleListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C406C7A165FC9FF00D5BBCF /* ArticleListCell.m */; };
+		4C406C7D165FCA1E00D5BBCF /* ArticleListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C406C7C165FCA1E00D5BBCF /* ArticleListCell.xib */; };
+		4C406C86165FDA2E00D5BBCF /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C406C85165FDA2E00D5BBCF /* LoadingCell.xib */; };
+		4C406C89165FDA4400D5BBCF /* LoadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C406C88165FDA4400D5BBCF /* LoadingCell.m */; };
+		4C406C8C165FDFE400D5BBCF /* LoadingCellSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C406C8B165FDFE400D5BBCF /* LoadingCellSingleton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -134,6 +139,14 @@
 		4C406C68165E916300D5BBCF /* Article.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Article.m; sourceTree = "<group>"; };
 		4C406C6A165E917000D5BBCF /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
 		4C406C6B165E917000D5BBCF /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
+		4C406C79165FC9FF00D5BBCF /* ArticleListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleListCell.h; sourceTree = "<group>"; };
+		4C406C7A165FC9FF00D5BBCF /* ArticleListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleListCell.m; sourceTree = "<group>"; };
+		4C406C7C165FCA1E00D5BBCF /* ArticleListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleListCell.xib; sourceTree = "<group>"; };
+		4C406C85165FDA2E00D5BBCF /* LoadingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
+		4C406C87165FDA4400D5BBCF /* LoadingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingCell.h; sourceTree = "<group>"; };
+		4C406C88165FDA4400D5BBCF /* LoadingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingCell.m; sourceTree = "<group>"; };
+		4C406C8A165FDFE300D5BBCF /* LoadingCellSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingCellSingleton.h; sourceTree = "<group>"; };
+		4C406C8B165FDFE400D5BBCF /* LoadingCellSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingCellSingleton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,6 +269,7 @@
 		4C406BA5165CFC2000D5BBCF /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				4C406C84165FD99F00D5BBCF /* Loading */,
 				4C406C26165E70CA00D5BBCF /* Setting */,
 				4C406C25165E708300D5BBCF /* Posts */,
 				4C406C24165E704100D5BBCF /* Photoes */,
@@ -299,6 +313,9 @@
 				4C406C40165E7E6700D5BBCF /* ArticleListViewController.h */,
 				4C406C41165E7E6700D5BBCF /* ArticleListViewController.m */,
 				4C406C42165E7E6700D5BBCF /* ArticleListViewController.xib */,
+				4C406C79165FC9FF00D5BBCF /* ArticleListCell.h */,
+				4C406C7A165FC9FF00D5BBCF /* ArticleListCell.m */,
+				4C406C7C165FCA1E00D5BBCF /* ArticleListCell.xib */,
 			);
 			name = Articles;
 			sourceTree = "<group>";
@@ -364,6 +381,18 @@
 				4C406C65165E915200D5BBCF /* Setting.m */,
 			);
 			name = Setting;
+			sourceTree = "<group>";
+		};
+		4C406C84165FD99F00D5BBCF /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				4C406C85165FDA2E00D5BBCF /* LoadingCell.xib */,
+				4C406C87165FDA4400D5BBCF /* LoadingCell.h */,
+				4C406C88165FDA4400D5BBCF /* LoadingCell.m */,
+				4C406C8A165FDFE300D5BBCF /* LoadingCellSingleton.h */,
+				4C406C8B165FDFE400D5BBCF /* LoadingCellSingleton.m */,
+			);
+			name = Loading;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -449,6 +478,8 @@
 				4C406C5E165E828000D5BBCF /* share_tencent.png in Resources */,
 				4C406C5F165E828000D5BBCF /* share@2x.png in Resources */,
 				4C406C60165E828000D5BBCF /* weibo@2x.png in Resources */,
+				4C406C7D165FCA1E00D5BBCF /* ArticleListCell.xib in Resources */,
+				4C406C86165FDA2E00D5BBCF /* LoadingCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +505,9 @@
 				4C406C66165E915200D5BBCF /* Setting.m in Sources */,
 				4C406C69165E916300D5BBCF /* Article.m in Sources */,
 				4C406C6C165E917000D5BBCF /* Post.m in Sources */,
+				4C406C7B165FC9FF00D5BBCF /* ArticleListCell.m in Sources */,
+				4C406C89165FDA4400D5BBCF /* LoadingCell.m in Sources */,
+				4C406C8C165FDFE400D5BBCF /* LoadingCellSingleton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
