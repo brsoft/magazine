@@ -7,6 +7,7 @@
 //
 
 #import "ArticleBaseViewController.h"
+#import "Constants.h"
 
 @interface ArticleBaseViewController ()
 
@@ -43,7 +44,11 @@
     self.tabBarItem.image = [UIImage imageNamed:@"info"];
     self.tabBarItem.title = @"文章";
     
-    NSArray *segmentTextArr = [NSArray arrayWithObjects:@"推荐文章", @"最新文章", @"热门文章", nil];
+    NSArray *segmentTextArr = [NSArray arrayWithObjects:ARTICLE_TYPE_IPHONE,
+                                                        ARTICLE_TYPE_ANDROID,
+                                                        ARTICLE_TYPE_WEBSITE,
+                                                        ARTICLE_TYPE_EC,
+                                                        nil];
     self.segmentedControl = [[UISegmentedControl alloc] initWithItems:segmentTextArr];
     self.segmentedControl.selectedSegmentIndex = 0;
     self.segmentedControl.autoresizingMask = UIViewAutoresizingFlexibleWidth;
@@ -61,13 +66,16 @@
 - (NSString *)getSegmentedTitle {
     switch (self.segmentedControl.selectedSegmentIndex) {
         case 0:
-            return @"推荐文章";
+            return ARTICLE_TYPE_IPHONE;
             break;
         case 1:
-            return @"最新文章";
+            return ARTICLE_TYPE_ANDROID;
             break;
         case 2:
-            return @"热门文章";
+            return ARTICLE_TYPE_WEBSITE;
+            break;
+        case 3:
+            return ARTICLE_TYPE_EC;
             break;
             
         default:
