@@ -79,6 +79,8 @@
 		4CA3E91C166267E4005B9D97 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA3E90F166267E4005B9D97 /* ASIInputStream.m */; };
 		4CA3E91D166267E4005B9D97 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA3E911166267E4005B9D97 /* ASINetworkQueue.m */; };
 		4CA3E91E166267E4005B9D97 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA3E914166267E4005B9D97 /* Reachability.m */; };
+		4CA3E92216626AC9005B9D97 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA3E92116626AC9005B9D97 /* JSONKit.m */; };
+		4CA3E92416626AE8005B9D97 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA3E92316626AE8005B9D97 /* libz.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -189,6 +191,9 @@
 		4CA3E912166267E4005B9D97 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
 		4CA3E913166267E4005B9D97 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		4CA3E914166267E4005B9D97 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		4CA3E92016626AC9005B9D97 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = magazine/JSONKit/JSONKit.h; sourceTree = "<group>"; };
+		4CA3E92116626AC9005B9D97 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = magazine/JSONKit/JSONKit.m; sourceTree = "<group>"; };
+		4CA3E92316626AE8005B9D97 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +201,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CA3E92416626AE8005B9D97 /* libz.dylib in Frameworks */,
 				4CA3E8FB166264D3005B9D97 /* libz.1.2.5.dylib in Frameworks */,
 				4C406B7B165CFA5C00D5BBCF /* CoreGraphics.framework in Frameworks */,
 				4CA3E8F9166264AA005B9D97 /* MobileCoreServices.framework in Frameworks */,
@@ -215,6 +221,7 @@
 		4C406B67165CFA5C00D5BBCF = {
 			isa = PBXGroup;
 			children = (
+				4CA3E91F16626A54005B9D97 /* JSONKIt */,
 				4C406B7C165CFA5C00D5BBCF /* magazine */,
 				4C406B75165CFA5C00D5BBCF /* Frameworks */,
 				4C406B73165CFA5C00D5BBCF /* Products */,
@@ -232,6 +239,7 @@
 		4C406B75165CFA5C00D5BBCF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4CA3E92316626AE8005B9D97 /* libz.dylib */,
 				4CA3E8FA166264D3005B9D97 /* libz.1.2.5.dylib */,
 				4CA3E8F8166264AA005B9D97 /* MobileCoreServices.framework */,
 				4CA3E8F61662649B005B9D97 /* SystemConfiguration.framework */,
@@ -478,6 +486,15 @@
 			path = ASIHttpRequest/Classes;
 			sourceTree = "<group>";
 		};
+		4CA3E91F16626A54005B9D97 /* JSONKIt */ = {
+			isa = PBXGroup;
+			children = (
+				4CA3E92016626AC9005B9D97 /* JSONKit.h */,
+				4CA3E92116626AC9005B9D97 /* JSONKit.m */,
+			);
+			name = JSONKIt;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -601,6 +618,7 @@
 				4CA3E91C166267E4005B9D97 /* ASIInputStream.m in Sources */,
 				4CA3E91D166267E4005B9D97 /* ASINetworkQueue.m in Sources */,
 				4CA3E91E166267E4005B9D97 /* Reachability.m in Sources */,
+				4CA3E92216626AC9005B9D97 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
