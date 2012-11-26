@@ -81,6 +81,14 @@
 		4CA3E91E166267E4005B9D97 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA3E914166267E4005B9D97 /* Reachability.m */; };
 		4CA3E92216626AC9005B9D97 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA3E92116626AC9005B9D97 /* JSONKit.m */; };
 		4CA3E92416626AE8005B9D97 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA3E92316626AE8005B9D97 /* libz.dylib */; };
+		4CFEBF221663C9AF00A30733 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFEBF211663C9AF00A30733 /* Utils.m */; };
+		4CFEBF2A1663CF6600A30733 /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFEBF291663CF6600A30733 /* EGORefreshTableHeaderView.m */; };
+		4CFEBF311663CF7A00A30733 /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CFEBF2B1663CF7A00A30733 /* blackArrow.png */; };
+		4CFEBF321663CF7A00A30733 /* blackArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CFEBF2C1663CF7A00A30733 /* blackArrow@2x.png */; };
+		4CFEBF331663CF7A00A30733 /* grayArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CFEBF2D1663CF7A00A30733 /* grayArrow.png */; };
+		4CFEBF341663CF7A00A30733 /* grayArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CFEBF2E1663CF7A00A30733 /* grayArrow@2x.png */; };
+		4CFEBF351663CF7A00A30733 /* whiteArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CFEBF2F1663CF7A00A30733 /* whiteArrow.png */; };
+		4CFEBF361663CF7A00A30733 /* whiteArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CFEBF301663CF7A00A30733 /* whiteArrow@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -194,6 +202,16 @@
 		4CA3E92016626AC9005B9D97 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = magazine/JSONKit/JSONKit.h; sourceTree = "<group>"; };
 		4CA3E92116626AC9005B9D97 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = magazine/JSONKit/JSONKit.m; sourceTree = "<group>"; };
 		4CA3E92316626AE8005B9D97 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		4CFEBF201663C9AF00A30733 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		4CFEBF211663C9AF00A30733 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		4CFEBF281663CF6600A30733 /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EGORefreshTableHeaderView.h; path = magazine/EGOTableViewPullRefresh/EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
+		4CFEBF291663CF6600A30733 /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EGORefreshTableHeaderView.m; path = magazine/EGOTableViewPullRefresh/EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
+		4CFEBF2B1663CF7A00A30733 /* blackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blackArrow.png; path = Resources/blackArrow.png; sourceTree = "<group>"; };
+		4CFEBF2C1663CF7A00A30733 /* blackArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "blackArrow@2x.png"; path = "Resources/blackArrow@2x.png"; sourceTree = "<group>"; };
+		4CFEBF2D1663CF7A00A30733 /* grayArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grayArrow.png; path = Resources/grayArrow.png; sourceTree = "<group>"; };
+		4CFEBF2E1663CF7A00A30733 /* grayArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "grayArrow@2x.png"; path = "Resources/grayArrow@2x.png"; sourceTree = "<group>"; };
+		4CFEBF2F1663CF7A00A30733 /* whiteArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = whiteArrow.png; path = Resources/whiteArrow.png; sourceTree = "<group>"; };
+		4CFEBF301663CF7A00A30733 /* whiteArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "whiteArrow@2x.png"; path = "Resources/whiteArrow@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +239,7 @@
 		4C406B67165CFA5C00D5BBCF = {
 			isa = PBXGroup;
 			children = (
+				4CFEBF241663CC7D00A30733 /* EGOTableViewPullRefresh */,
 				4CA3E91F16626A54005B9D97 /* JSONKIt */,
 				4C406B7C165CFA5C00D5BBCF /* magazine */,
 				4C406B75165CFA5C00D5BBCF /* Frameworks */,
@@ -287,6 +306,12 @@
 		4C406BA2165CFBDF00D5BBCF /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				4CFEBF2B1663CF7A00A30733 /* blackArrow.png */,
+				4CFEBF2C1663CF7A00A30733 /* blackArrow@2x.png */,
+				4CFEBF2D1663CF7A00A30733 /* grayArrow.png */,
+				4CFEBF2E1663CF7A00A30733 /* grayArrow@2x.png */,
+				4CFEBF2F1663CF7A00A30733 /* whiteArrow.png */,
+				4CFEBF301663CF7A00A30733 /* whiteArrow@2x.png */,
 				4C406C4F165E828000D5BBCF /* blueArrow.png */,
 				4C406C50165E828000D5BBCF /* blueArrow@2x.png */,
 				4C406C51165E828000D5BBCF /* info@2x.png */,
@@ -313,6 +338,8 @@
 		4C406BA3165CFBF100D5BBCF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				4CFEBF201663C9AF00A30733 /* Utils.h */,
+				4CFEBF211663C9AF00A30733 /* Utils.m */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -495,6 +522,15 @@
 			name = JSONKIt;
 			sourceTree = "<group>";
 		};
+		4CFEBF241663CC7D00A30733 /* EGOTableViewPullRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				4CFEBF281663CF6600A30733 /* EGORefreshTableHeaderView.h */,
+				4CFEBF291663CF6600A30733 /* EGORefreshTableHeaderView.m */,
+			);
+			name = EGOTableViewPullRefresh;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -580,6 +616,12 @@
 				4C406C60165E828000D5BBCF /* weibo@2x.png in Resources */,
 				4C406C7D165FCA1E00D5BBCF /* ArticleListCell.xib in Resources */,
 				4C406C86165FDA2E00D5BBCF /* LoadingCell.xib in Resources */,
+				4CFEBF311663CF7A00A30733 /* blackArrow.png in Resources */,
+				4CFEBF321663CF7A00A30733 /* blackArrow@2x.png in Resources */,
+				4CFEBF331663CF7A00A30733 /* grayArrow.png in Resources */,
+				4CFEBF341663CF7A00A30733 /* grayArrow@2x.png in Resources */,
+				4CFEBF351663CF7A00A30733 /* whiteArrow.png in Resources */,
+				4CFEBF361663CF7A00A30733 /* whiteArrow@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,6 +661,8 @@
 				4CA3E91D166267E4005B9D97 /* ASINetworkQueue.m in Sources */,
 				4CA3E91E166267E4005B9D97 /* Reachability.m in Sources */,
 				4CA3E92216626AC9005B9D97 /* JSONKit.m in Sources */,
+				4CFEBF221663C9AF00A30733 /* Utils.m in Sources */,
+				4CFEBF2A1663CF6600A30733 /* EGORefreshTableHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

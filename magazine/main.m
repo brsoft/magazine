@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #import "AppDelegate.h"
+#import "JSONKit.h"
 
 int main(int argc, char *argv[])
 {
@@ -27,4 +28,14 @@ int main(int argc, char *argv[])
 //    
 //    NSLog(@"Date: %@", date);
 //    NSLog(@"%@", [format stringFromDate:date]);
+    
+    
+//    NSString *json = @"{\"a\":123, \"b\":\"abc\", \"c\":[134, \"hello\"],\"d\":{\"name\":\"张三\",\"age\":23}}";
+//    NSLog(@"json:%@", json);
+////    NSDictionary *data = [json objectFromJSONStringWithParseOptions:JKParseOptionLooseUnicode];
+//    NSData *d = [json dataUsingEncoding:NSUTF8StringEncoding];
+//    NSDictionary *data = [d objectFromJSONData];
+//    NSLog(@"json.c:%@", [data objectForKey:@"c"]);
+//    NSLog(@"json.d:%@", [[data objectForKey:@"d"]objectForKey:@"name"]);
+//    [json release];
 }

@@ -7,6 +7,7 @@
 //
 
 #import "Article.h"
+#import "Constants.h"
 
 @implementation Article
 @synthesize articleId;
@@ -44,4 +45,24 @@
     
     return article;
 }
+
+- (id)initTitleListWithJsonDictionary:(NSDictionary *)dictionary
+{
+    Article *article = [[Article alloc] init];
+    NSDateFormatter *format = [[NSDateFormatter alloc] init];
+    [format setDateFormat:DATE_TIME_FORMAT_01];
+    
+    article.articleType = [[dictionary objectForKey:@"typeid"] integerValue];
+    article.articleId = [[dictionary objectForKey:@"id"] integerValue];
+    article.visitsCount = [[dictionary objectForKey:@"click"] integerValue];
+    article.title = [dictionary objectForKey:@"title"];
+    NSDate *date = [NSDate dateWithTimeIntervalSince1970:[[dictionary objectForKey:@"pubdate"] integerValue]];
+    article.publishDate = [format stringFromDate:date];
+    article.summary = [dictionary objectForKey:@"description"];
+    article.imageUrl = [dictionary objectForKey:@"litpic"];
+    
+    
+    return article;
+}
+
 @end

@@ -10,15 +10,28 @@
 #import "ArticleListCell.h"
 #import "Article.h"
 #import "LoadingCellSingleton.h"
+#import "EGORefreshTableHeaderView.h"
 
-@interface ArticleListViewController : BaseViewController <UITabBarControllerDelegate, UITableViewDataSource, UITableViewDelegate>
+@interface ArticleListViewController : BaseViewController <UITabBarControllerDelegate, UITableViewDataSource, UITableViewDelegate, EGORefreshTableHeaderDelegate>
 {
     BOOL isLoading;
     BOOL isLoadOver;
+    int allArticleCount;
+    
+    BOOL _reloading;
+    EGORefreshTableHeaderView *_refreshHeaderView;
 }
 
 @property int catalog;
 @property (strong, nonatomic) NSMutableArray *articleAry;
 @property (retain, nonatomic) IBOutlet UITableView *tableView;
+
+- (NSMutableArray *)getArticleList:(int)aTypeid andBeginIndex:(int)begin andEndIndex:(int)end;
+- (void)reloadArticleList:(int)catalogId andRefresh:(BOOL)refresh;
+- (void)clear;
+
+-(void)reloadTableViewDataSource;
+-(void)doneLoadingTableViewData;
+-(void)refresh;
 
 @end

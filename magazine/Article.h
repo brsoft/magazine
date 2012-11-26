@@ -30,4 +30,6 @@
           andVisitsCount:(int)aVisitsCount
           andArticleType:(int)aArticleType
                andSummay:(NSString *)aSummay;
+- (id)initTitleListWithJsonDictionary:(NSDictionary *)dictionary;
+
 @end
