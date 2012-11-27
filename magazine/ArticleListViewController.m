@@ -16,9 +16,9 @@
 #define loadNext20Tip           @"下面 20 项 . . ."
 #define loadingTip              @"正在加载 . . ."
 #define article_source_url      @"http://www.brsoft.net"
-#define article_list_api_url    @"http://www.brsoft.net/api/json/getNews.php"
+#define article_list_api_url    @"http://www.brsoft.net/api/json/getNews.php?typeid=%d&begin=%d&end=%d"
 
-#define page_size               5
+#define page_size               20
 
 @interface ArticleListViewController ()
 
@@ -68,9 +68,12 @@
 
 - (void)reloadArticleList:(int)catalogId andRefresh:(BOOL)refresh
 {
+    if (isLoading || isLoadOver) {
+        return;
+    }
+    
     int typeId = -1;
     int beginIndex = 0;
-    int endIndex = 0;
     NSArray *newArticles;
     
     self.catalog = catalogId;
@@ -94,13 +97,17 @@
     }
     
     beginIndex = self->allArticleCount;
-    endIndex = self->allArticleCount + page_size;
-    newArticles = [self getArticleList:typeId andBeginIndex:beginIndex andEndIndex:endIndex];
-    NSLog(@"****%d --> %d", beginIndex, endIndex);
+    isLoading = YES;
+    newArticles = [self getArticleList:typeId andBeginIndex:beginIndex andEndIndex:page_size];
     [self.articleAry addObjectsFromArray:newArticles];
+    if ([newArticles count] < page_size) {
+        isLoadOver = YES;
+    }
+    
     self->allArticleCount += [newArticles count];
     [self.tableView reloadData];
     [self doneLoadingTableViewData];
+    isLoading = NO;
 }
 
 - (void)clear
@@ -112,7 +119,7 @@
 
 - (NSMutableArray *)getArticleList:(int)aTypeid andBeginIndex:(int)begin andEndIndex:(int)end
 {
-    NSString *urlStr = [NSString stringWithFormat:@"%@?typeid=%d&begin=%d&end=%d", article_list_api_url, aTypeid, begin, end];
+    NSString *urlStr = [NSString stringWithFormat:article_list_api_url, aTypeid, begin, end];
     NSURL *url = [NSURL URLWithString:urlStr];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     //[request setResponseEncoding:NSUTF8StringEncoding];
@@ -208,7 +215,12 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //todo
+    int row = [indexPath row];
+    if (row >= [articleAry count]) {
+        if (!isLoading) {
+            [self reloadArticleList:self.catalog andRefresh:NO];
+        }
+    }
 }
 
 #pragma mark EGOTableViewPullRefresh
@@ -257,6 +269,7 @@
 //    allArticleCount += [newArticles count];
 //    [self.tableView reloadData];
 //    [self doneLoadingTableViewData];
+    isLoadOver = NO;
     [self reloadArticleList:self.catalog andRefresh:NO];
 }
 
