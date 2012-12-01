@@ -92,6 +92,10 @@
 		4CFEBF341663CF7A00A30733 /* grayArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CFEBF2E1663CF7A00A30733 /* grayArrow@2x.png */; };
 		4CFEBF351663CF7A00A30733 /* whiteArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CFEBF2F1663CF7A00A30733 /* whiteArrow.png */; };
 		4CFEBF361663CF7A00A30733 /* whiteArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CFEBF301663CF7A00A30733 /* whiteArrow@2x.png */; };
+		5BC7DFFA1669DE8B0025FE40 /* ProductBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC7DFF51669DE8B0025FE40 /* ProductBaseViewController.m */; };
+		5BC7DFFB1669DE8B0025FE40 /* ProductBaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BC7DFF61669DE8B0025FE40 /* ProductBaseViewController.xib */; };
+		5BC7DFFC1669DE8B0025FE40 /* ProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC7DFF81669DE8B0025FE40 /* ProductListViewController.m */; };
+		5BC7DFFD1669DE8B0025FE40 /* ProductListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BC7DFF91669DE8B0025FE40 /* ProductListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -113,7 +117,6 @@
 		4C406BF7165D0AA100D5BBCF /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		4C406BF9165D106100D5BBCF /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		4C406BFA165D106100D5BBCF /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		4C406BFC165D143200D5BBCF /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		4C406C03165D1BF100D5BBCF /* arrow-left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arrow-left.png"; path = "Resources/arrow-left.png"; sourceTree = "<group>"; };
 		4C406C04165D1BF100D5BBCF /* arrow-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arrow-right.png"; path = "Resources/arrow-right.png"; sourceTree = "<group>"; };
 		4C406C05165D1BF100D5BBCF /* arrows.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrows.png; path = Resources/arrows.png; sourceTree = "<group>"; };
@@ -220,6 +223,12 @@
 		4CFEBF2E1663CF7A00A30733 /* grayArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "grayArrow@2x.png"; path = "Resources/grayArrow@2x.png"; sourceTree = "<group>"; };
 		4CFEBF2F1663CF7A00A30733 /* whiteArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = whiteArrow.png; path = Resources/whiteArrow.png; sourceTree = "<group>"; };
 		4CFEBF301663CF7A00A30733 /* whiteArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "whiteArrow@2x.png"; path = "Resources/whiteArrow@2x.png"; sourceTree = "<group>"; };
+		5BC7DFF41669DE8B0025FE40 /* ProductBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductBaseViewController.h; sourceTree = "<group>"; };
+		5BC7DFF51669DE8B0025FE40 /* ProductBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductBaseViewController.m; sourceTree = "<group>"; };
+		5BC7DFF61669DE8B0025FE40 /* ProductBaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductBaseViewController.xib; sourceTree = "<group>"; };
+		5BC7DFF71669DE8B0025FE40 /* ProductListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListViewController.h; sourceTree = "<group>"; };
+		5BC7DFF81669DE8B0025FE40 /* ProductListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListViewController.m; sourceTree = "<group>"; };
+		5BC7DFF91669DE8B0025FE40 /* ProductListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -292,7 +301,6 @@
 				4C406B85165CFA5C00D5BBCF /* AppDelegate.h */,
 				4C406B86165CFA5C00D5BBCF /* AppDelegate.m */,
 				4C406B7D165CFA5C00D5BBCF /* Supporting Files */,
-				4C406BFC165D143200D5BBCF /* Constants.h */,
 			);
 			path = magazine;
 			sourceTree = "<group>";
@@ -365,6 +373,7 @@
 		4C406BA5165CFC2000D5BBCF /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				5BC7DFEA1669CFE90025FE40 /* Products */,
 				4C406C84165FD99F00D5BBCF /* Loading */,
 				4C406C26165E70CA00D5BBCF /* Setting */,
 				4C406C25165E708300D5BBCF /* Posts */,
@@ -544,6 +553,19 @@
 			name = EGOTableViewPullRefresh;
 			sourceTree = "<group>";
 		};
+		5BC7DFEA1669CFE90025FE40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BC7DFF41669DE8B0025FE40 /* ProductBaseViewController.h */,
+				5BC7DFF51669DE8B0025FE40 /* ProductBaseViewController.m */,
+				5BC7DFF61669DE8B0025FE40 /* ProductBaseViewController.xib */,
+				5BC7DFF71669DE8B0025FE40 /* ProductListViewController.h */,
+				5BC7DFF81669DE8B0025FE40 /* ProductListViewController.m */,
+				5BC7DFF91669DE8B0025FE40 /* ProductListViewController.xib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -635,7 +657,12 @@
 				4CFEBF341663CF7A00A30733 /* grayArrow@2x.png in Resources */,
 				4CFEBF351663CF7A00A30733 /* whiteArrow.png in Resources */,
 				4CFEBF361663CF7A00A30733 /* whiteArrow@2x.png in Resources */,
+<<<<<<< HEAD
 				4CA9D732166CFEF700DA364E /* ArticleDetailViewController.xib in Resources */,
+=======
+				5BC7DFFB1669DE8B0025FE40 /* ProductBaseViewController.xib in Resources */,
+				5BC7DFFD1669DE8B0025FE40 /* ProductListViewController.xib in Resources */,
+>>>>>>> Refine APP:
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -677,8 +704,13 @@
 				4CA3E92216626AC9005B9D97 /* JSONKit.m in Sources */,
 				4CFEBF221663C9AF00A30733 /* Utils.m in Sources */,
 				4CFEBF2A1663CF6600A30733 /* EGORefreshTableHeaderView.m in Sources */,
+<<<<<<< HEAD
 				4CA9D72C166CFB8900DA364E /* ArticleDetail.m in Sources */,
 				4CA9D731166CFEF700DA364E /* ArticleDetailViewController.m in Sources */,
+=======
+				5BC7DFFA1669DE8B0025FE40 /* ProductBaseViewController.m in Sources */,
+				5BC7DFFC1669DE8B0025FE40 /* ProductListViewController.m in Sources */,
+>>>>>>> Refine APP:
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

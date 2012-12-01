@@ -7,7 +7,6 @@
 //
 
 #import "WelcomeViewController.h"
-#import "Constants.h"
 #import "HomeViewController.h"
 
 @interface WelcomeViewController ()
