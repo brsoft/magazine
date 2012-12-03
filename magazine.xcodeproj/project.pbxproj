@@ -81,6 +81,9 @@
 		4CA3E91E166267E4005B9D97 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA3E914166267E4005B9D97 /* Reachability.m */; };
 		4CA3E92216626AC9005B9D97 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA3E92116626AC9005B9D97 /* JSONKit.m */; };
 		4CA3E92416626AE8005B9D97 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA3E92316626AE8005B9D97 /* libz.dylib */; };
+		4CA9D72C166CFB8900DA364E /* ArticleDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA9D72B166CFB8900DA364E /* ArticleDetail.m */; };
+		4CA9D731166CFEF700DA364E /* ArticleDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA9D72F166CFEF600DA364E /* ArticleDetailViewController.m */; };
+		4CA9D732166CFEF700DA364E /* ArticleDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CA9D730166CFEF700DA364E /* ArticleDetailViewController.xib */; };
 		4CFEBF221663C9AF00A30733 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFEBF211663C9AF00A30733 /* Utils.m */; };
 		4CFEBF2A1663CF6600A30733 /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFEBF291663CF6600A30733 /* EGORefreshTableHeaderView.m */; };
 		4CFEBF311663CF7A00A30733 /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CFEBF2B1663CF7A00A30733 /* blackArrow.png */; };
@@ -202,6 +205,11 @@
 		4CA3E92016626AC9005B9D97 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = magazine/JSONKit/JSONKit.h; sourceTree = "<group>"; };
 		4CA3E92116626AC9005B9D97 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = magazine/JSONKit/JSONKit.m; sourceTree = "<group>"; };
 		4CA3E92316626AE8005B9D97 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		4CA9D72A166CFB8900DA364E /* ArticleDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleDetail.h; sourceTree = "<group>"; };
+		4CA9D72B166CFB8900DA364E /* ArticleDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleDetail.m; sourceTree = "<group>"; };
+		4CA9D72E166CFEF600DA364E /* ArticleDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleDetailViewController.h; sourceTree = "<group>"; };
+		4CA9D72F166CFEF600DA364E /* ArticleDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleDetailViewController.m; sourceTree = "<group>"; };
+		4CA9D730166CFEF700DA364E /* ArticleDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleDetailViewController.xib; sourceTree = "<group>"; };
 		4CFEBF201663C9AF00A30733 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		4CFEBF211663C9AF00A30733 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		4CFEBF281663CF6600A30733 /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EGORefreshTableHeaderView.h; path = magazine/EGOTableViewPullRefresh/EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
@@ -404,6 +412,9 @@
 				4C406C79165FC9FF00D5BBCF /* ArticleListCell.h */,
 				4C406C7A165FC9FF00D5BBCF /* ArticleListCell.m */,
 				4C406C7C165FCA1E00D5BBCF /* ArticleListCell.xib */,
+				4CA9D72E166CFEF600DA364E /* ArticleDetailViewController.h */,
+				4CA9D72F166CFEF600DA364E /* ArticleDetailViewController.m */,
+				4CA9D730166CFEF700DA364E /* ArticleDetailViewController.xib */,
 			);
 			name = Articles;
 			sourceTree = "<group>";
@@ -449,6 +460,8 @@
 			children = (
 				4C406C67165E916300D5BBCF /* Article.h */,
 				4C406C68165E916300D5BBCF /* Article.m */,
+				4CA9D72A166CFB8900DA364E /* ArticleDetail.h */,
+				4CA9D72B166CFB8900DA364E /* ArticleDetail.m */,
 			);
 			name = Article;
 			sourceTree = "<group>";
@@ -622,6 +635,7 @@
 				4CFEBF341663CF7A00A30733 /* grayArrow@2x.png in Resources */,
 				4CFEBF351663CF7A00A30733 /* whiteArrow.png in Resources */,
 				4CFEBF361663CF7A00A30733 /* whiteArrow@2x.png in Resources */,
+				4CA9D732166CFEF700DA364E /* ArticleDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -663,6 +677,8 @@
 				4CA3E92216626AC9005B9D97 /* JSONKit.m in Sources */,
 				4CFEBF221663C9AF00A30733 /* Utils.m in Sources */,
 				4CFEBF2A1663CF6600A30733 /* EGORefreshTableHeaderView.m in Sources */,
+				4CA9D72C166CFB8900DA364E /* ArticleDetail.m in Sources */,
+				4CA9D731166CFEF700DA364E /* ArticleDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

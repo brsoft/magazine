@@ -68,10 +68,6 @@
 
 - (void)reloadArticleList:(int)catalogId andRefresh:(BOOL)refresh
 {
-    if (isLoading || isLoadOver) {
-        return;
-    }
-    
     int typeId = -1;
     int beginIndex = 0;
     NSArray *newArticles;
@@ -79,6 +75,10 @@
     self.catalog = catalogId;
     if (refresh) {
         [self clear];
+    }
+    
+    if (isLoading || isLoadOver) {
+        return;
     }
     
     switch (catalogId) {
@@ -220,6 +220,8 @@
         if (!isLoading) {
             [self reloadArticleList:self.catalog andRefresh:NO];
         }
+    } else {
+    
     }
 }
 
