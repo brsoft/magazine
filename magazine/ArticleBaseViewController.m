@@ -7,7 +7,7 @@
 //
 
 #import "ArticleBaseViewController.h"
-
+#import "Constants.h"
 
 @interface ArticleBaseViewController ()
 
@@ -37,12 +37,12 @@
 }
 
 - (NSString *)navTitle {
-    return NAV_TITLE_ARTICLE;
+    return @"文章";
 }
 
 - (void)initView {
-    self.tabBarItem.image = [UIImage imageNamed:TAB_IMAGE_ACTICLE];
-    self.tabBarItem.title = BTN_TITLE_ARTICLE;
+    self.tabBarItem.image = [UIImage imageNamed:@"info"];
+    self.tabBarItem.title = @"文章";
     
     NSArray *segmentTextArr = [NSArray arrayWithObjects:ARTICLE_TYPE_IPHONE,
                                                         ARTICLE_TYPE_ANDROID,

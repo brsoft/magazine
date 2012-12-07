@@ -9,9 +9,16 @@
 #import "ArticleListViewController.h"
 #import "ASIHTTPRequest.h"
 #import "JSONKit.h"
+#import "Constants.h"
 #import "Utils.h"
 
+#define article_cell_identifier @"articleCellIdentifier"
+#define loadNext20Tip           @"下面 20 项 . . ."
+#define loadingTip              @"正在加载 . . ."
+#define article_source_url      @"http://www.brsoft.net"
+#define article_list_api_url    @"http://www.brsoft.net/api/json/getNews.php?typeid=%d&begin=%d&end=%d"
 
+#define page_size               20
 
 @interface ArticleListViewController ()
 
@@ -112,7 +119,7 @@
 
 - (NSMutableArray *)getArticleList:(int)aTypeid andBeginIndex:(int)begin andEndIndex:(int)end
 {
-    NSString *urlStr = [NSString stringWithFormat:api_article_list, aTypeid, begin, end];
+    NSString *urlStr = [NSString stringWithFormat:article_list_api_url, aTypeid, begin, end];
     NSURL *url = [NSURL URLWithString:urlStr];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     //[request setResponseEncoding:NSUTF8StringEncoding];
@@ -121,8 +128,17 @@
     NSError *error = [request error];
     if (!error) {
         NSString *respStr = [request responseString];
-        NSMutableArray *articleList = [Utils readStrNewsArray:respStr];        
+        NSData *respData = [respStr dataUsingEncoding:NSUTF8StringEncoding];
+        NSArray *result = [respData objectFromJSONData];
+        NSMutableArray *articleList = [[NSMutableArray alloc] initWithCapacity:result.count];
+        for (int i = 0; i < result.count; i++) {
+            NSDictionary *dic = [result objectAtIndex:i];
+            Article *article = [[Article alloc]initTitleListWithJsonDictionary:dic];
+            [articleList addObject:article];
+        }
+        
         //todo: download images?
+        
         return articleList;
     } else {
         return nil;
@@ -158,12 +174,13 @@
             Article *article = [articleAry objectAtIndex:[indexPath row]];
             cell.lblTitle.text = article.title;
             cell.lblDescription.text = article.summary;
-            cell.lblDate.text = [NSString stringWithFormat:msg_article_publish, article.publishDate, article.visitsCount];
+            cell.lblDate.text = [NSString stringWithFormat:@"发布于 %@ (%d)", article.publishDate, article.visitsCount];
             if (article.imageUrl && ![article.imageUrl isEqualToString:@""]) {
                 NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@", article_source_url, article.imageUrl]];
                 ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
                 [request startSynchronous];
                 cell.imgView.image = [UIImage imageWithData:[request responseData]];
+
             } else {
                 cell.imgView.image = [UIImage imageNamed:@"mm004.png"];
             }
@@ -174,12 +191,12 @@
         }
         else
         {
-            return [[LoadingCellSingleton Instance] getLoadMoreCell:tableView andIsLoadOver:isLoadOver andLoadOverString:msg_article_loadAll andLoadingString:(isLoading ? loadingTip : loadNext20Tip) andIsLoading:isLoading];
+            return [[LoadingCellSingleton Instance] getLoadMoreCell:tableView andIsLoadOver:isLoadOver andLoadOverString:@"已经加载全部文章" andLoadingString:(isLoading ? loadingTip : loadNext20Tip) andIsLoading:isLoading];
         }
     }
     else
     {
-        return [[LoadingCellSingleton Instance] getLoadMoreCell:tableView andIsLoadOver:isLoadOver andLoadOverString:msg_article_loadAll andLoadingString:(isLoading ? loadingTip : loadNext20Tip) andIsLoading:isLoading];
+        return [[LoadingCellSingleton Instance] getLoadMoreCell:tableView andIsLoadOver:isLoadOver andLoadOverString:@"已经加载全部文章" andLoadingString:(isLoading ? loadingTip : loadNext20Tip) andIsLoading:isLoading];
     }
 }
 
