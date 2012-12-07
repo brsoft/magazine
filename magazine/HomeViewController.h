@@ -11,6 +11,7 @@
 #import "PhotoBaseViewController.h"
 #import "PostBaseViewController.h"
 #import "SettingViewController.h"
+#import "ProductBaseViewController.h"
 
 @interface HomeViewController : BaseViewController <UITabBarControllerDelegate>
 
@@ -19,6 +20,7 @@
 @property (strong, nonatomic) PhotoBaseViewController *photoBaseView;
 @property (strong, nonatomic) PostBaseViewController *postBaseView;
 @property (strong, nonatomic) SettingViewController *settingView;
+@property (strong, nonatomic) ProductBaseViewController *productBaseView;
 
 - (void)initView;
 

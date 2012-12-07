@@ -18,6 +18,7 @@
 @synthesize photoBaseView;
 @synthesize postBaseView;
 @synthesize settingView;
+@synthesize productBaseView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -39,6 +40,9 @@
     self.articleBaseView = [[ArticleBaseViewController alloc] initWithNibName:@"ArticleBaseViewController" bundle:nil];
     UINavigationController *articleNav = [[UINavigationController alloc] initWithRootViewController:self.articleBaseView];
     
+    self.productBaseView = [[ProductBaseViewController alloc] initWithNibName:@"PhotoBaseViewController" bundle:nil];
+    UINavigationController *productNav = [[UINavigationController alloc] initWithRootViewController:self.productBaseView];
+    
     self.photoBaseView = [[PhotoBaseViewController alloc] initWithNibName:@"PhotoBaseViewController" bundle:nil];
     UINavigationController *photoNav = [[UINavigationController alloc] initWithRootViewController:self.photoBaseView];
     
@@ -51,7 +55,7 @@
     
     self.tabBarController = [[UITabBarController alloc] init];
     self.tabBarController.delegate = self;
-    self.tabBarController.viewControllers = [NSArray arrayWithObjects:articleNav, photoNav, postNav, settingNav, nil];
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects:articleNav, productNav , photoNav, postNav, settingNav, nil];
     
     self.tabBarController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
     [self.view addSubview:self.tabBarController.view];
