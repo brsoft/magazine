@@ -12,4 +12,5 @@
 
 + (UIColor *)getBackgroundColor;
 + (UIColor *)getCellBackgroundColor;
++ (NSMutableArray *)readStrNewsArray:(NSString *)str;
 @end
