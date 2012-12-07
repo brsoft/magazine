@@ -7,8 +7,6 @@
 //
 
 #import "Utils.h"
-#import "JSONKit.h"
-#import "Article.h"
 
 @implementation Utils
 
@@ -19,17 +17,6 @@
 + (UIColor *)getCellBackgroundColor
 {
     return [UIColor colorWithRed:235.0/255 green:235.0/255 blue:243.0/255 alpha:1.0];
-}
-+ (NSMutableArray *)readStrNewsArray:(NSString *)str {
-    NSData *respData = [str dataUsingEncoding:NSUTF8StringEncoding];
-    NSArray *result = [respData objectFromJSONData];
-    NSMutableArray *articleList = [[NSMutableArray alloc] initWithCapacity:result.count];
-    for (int i = 0; i < result.count; i++) {
-        NSDictionary *dic = [result objectAtIndex:i];
-        Article *article = [[Article alloc]initTitleListWithJsonDictionary:dic];
-        [articleList addObject:article];
-    }
-    return articleList;
 }
 
 @end
