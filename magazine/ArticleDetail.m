@@ -7,7 +7,7 @@
 //
 
 #import "ArticleDetail.h"
-#import "Constants.h"
+//#import "Constants.h"
 
 @implementation ArticleDetail
 @synthesize articleId;
