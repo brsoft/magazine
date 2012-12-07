@@ -657,12 +657,9 @@
 				4CFEBF341663CF7A00A30733 /* grayArrow@2x.png in Resources */,
 				4CFEBF351663CF7A00A30733 /* whiteArrow.png in Resources */,
 				4CFEBF361663CF7A00A30733 /* whiteArrow@2x.png in Resources */,
-<<<<<<< HEAD
 				4CA9D732166CFEF700DA364E /* ArticleDetailViewController.xib in Resources */,
-=======
 				5BC7DFFB1669DE8B0025FE40 /* ProductBaseViewController.xib in Resources */,
 				5BC7DFFD1669DE8B0025FE40 /* ProductListViewController.xib in Resources */,
->>>>>>> Refine APP:
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -704,13 +701,10 @@
 				4CA3E92216626AC9005B9D97 /* JSONKit.m in Sources */,
 				4CFEBF221663C9AF00A30733 /* Utils.m in Sources */,
 				4CFEBF2A1663CF6600A30733 /* EGORefreshTableHeaderView.m in Sources */,
-<<<<<<< HEAD
 				4CA9D72C166CFB8900DA364E /* ArticleDetail.m in Sources */,
 				4CA9D731166CFEF700DA364E /* ArticleDetailViewController.m in Sources */,
-=======
 				5BC7DFFA1669DE8B0025FE40 /* ProductBaseViewController.m in Sources */,
 				5BC7DFFC1669DE8B0025FE40 /* ProductListViewController.m in Sources */,
->>>>>>> Refine APP:
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
