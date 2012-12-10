@@ -31,5 +31,15 @@
     }
     return articleList;
 }
++ (NSString *) formatDateTime:(NSDate *)_date {
+    return [self formatDateTime:_date format:DATE_TIME_FORMAT_01];
+}
++ (NSString *) formatDateTime:(NSDate *)_date format:(NSString *)_format{
+    NSDateFormatter *format = [[NSDateFormatter alloc] init];
+    [format setDateFormat:_format];
+    NSString *result = [format stringFromDate:_date];
+    [format release];
+    return result;
+}
 
 @end

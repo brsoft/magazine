@@ -12,5 +12,9 @@
 
 + (UIColor *)getBackgroundColor;
 + (UIColor *)getCellBackgroundColor;
+
 + (NSMutableArray *)readStrNewsArray:(NSString *)str;
+// Format Date
++ (NSString *) formatDateTime:(NSDate *)_date;
++ (NSString *) formatDateTime:(NSDate *)_date format:(NSString *)_format;
 @end

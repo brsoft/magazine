@@ -96,6 +96,9 @@
 		5BC7DFFB1669DE8B0025FE40 /* ProductBaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BC7DFF61669DE8B0025FE40 /* ProductBaseViewController.xib */; };
 		5BC7DFFC1669DE8B0025FE40 /* ProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC7DFF81669DE8B0025FE40 /* ProductListViewController.m */; };
 		5BC7DFFD1669DE8B0025FE40 /* ProductListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BC7DFF91669DE8B0025FE40 /* ProductListViewController.xib */; };
+		5BCCDE5F167619D0003CE573 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BCCDE5E167619D0003CE573 /* Product.m */; };
+		5BCCDE62167620F5003CE573 /* BaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BCCDE61167620F5003CE573 /* BaseObject.m */; };
+		5BCCDE65167627F6003CE573 /* ProductDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BCCDE64167627F6003CE573 /* ProductDetail.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -229,6 +232,12 @@
 		5BC7DFF71669DE8B0025FE40 /* ProductListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListViewController.h; sourceTree = "<group>"; };
 		5BC7DFF81669DE8B0025FE40 /* ProductListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListViewController.m; sourceTree = "<group>"; };
 		5BC7DFF91669DE8B0025FE40 /* ProductListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductListViewController.xib; sourceTree = "<group>"; };
+		5BCCDE5D167619D0003CE573 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		5BCCDE5E167619D0003CE573 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		5BCCDE60167620F5003CE573 /* BaseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseObject.h; sourceTree = "<group>"; };
+		5BCCDE61167620F5003CE573 /* BaseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseObject.m; sourceTree = "<group>"; };
+		5BCCDE63167627F6003CE573 /* ProductDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetail.h; sourceTree = "<group>"; };
+		5BCCDE64167627F6003CE573 /* ProductDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetail.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -392,9 +401,12 @@
 		4C406BA6165CFC4900D5BBCF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5BCCDE56167617E3003CE573 /* Product */,
 				4C406C63165E911E00D5BBCF /* Setting */,
 				4C406C62165E911300D5BBCF /* Post */,
 				4C406C61165E910900D5BBCF /* Article */,
+				5BCCDE60167620F5003CE573 /* BaseObject.h */,
+				5BCCDE61167620F5003CE573 /* BaseObject.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -566,6 +578,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		5BCCDE56167617E3003CE573 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				5BCCDE5D167619D0003CE573 /* Product.h */,
+				5BCCDE5E167619D0003CE573 /* Product.m */,
+				5BCCDE63167627F6003CE573 /* ProductDetail.h */,
+				5BCCDE64167627F6003CE573 /* ProductDetail.m */,
+			);
+			name = Product;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -705,6 +728,9 @@
 				4CA9D731166CFEF700DA364E /* ArticleDetailViewController.m in Sources */,
 				5BC7DFFA1669DE8B0025FE40 /* ProductBaseViewController.m in Sources */,
 				5BC7DFFC1669DE8B0025FE40 /* ProductListViewController.m in Sources */,
+				5BCCDE5F167619D0003CE573 /* Product.m in Sources */,
+				5BCCDE62167620F5003CE573 /* BaseObject.m in Sources */,
+				5BCCDE65167627F6003CE573 /* ProductDetail.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
