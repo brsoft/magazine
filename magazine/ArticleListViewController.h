@@ -27,7 +27,7 @@
 @property (retain, nonatomic) IBOutlet UITableView *tableView;
 
 - (NSMutableArray *)getArticleList:(int)aTypeid andBeginIndex:(int)begin andEndIndex:(int)end;
-- (void)reloadArticleList:(int)catalogId andRefresh:(BOOL)refresh;
+- (void)reloadArticleList:(int)catalogId andRefresh:(BOOL)refresh andIsScrollPull:(BOOL)isPull;
 - (void)clear;
 
 -(void)reloadTableViewDataSource;

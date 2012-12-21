@@ -85,7 +85,7 @@
 }
 
 - (void)onSelectSegment:(id)sender {
-    [self.articleListView reloadArticleList:self.segmentedControl.selectedSegmentIndex andRefresh:YES];
+    [self.articleListView reloadArticleList:self.segmentedControl.selectedSegmentIndex andRefresh:YES andIsScrollPull:NO];
 }
 
 - (void)viewDidAppear:(BOOL)animated {

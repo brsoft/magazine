@@ -12,7 +12,6 @@
 #import "Utils.h"
 
 
-
 @interface ArticleListViewController ()
 
 @end
@@ -48,7 +47,7 @@
 
     self->allArticleCount = 0;
     self.articleAry = [[NSMutableArray alloc]initWithCapacity:page_size];
-    [self reloadArticleList:0 andRefresh:NO];
+    [self reloadArticleList:0 andRefresh:NO andIsScrollPull:NO];
     self.tableView.backgroundColor = [Utils getBackgroundColor];
     
 }
@@ -59,11 +58,12 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)reloadArticleList:(int)catalogId andRefresh:(BOOL)refresh
+- (void)reloadArticleList:(int)catalogId andRefresh:(BOOL)refresh andIsScrollPull:(BOOL)isPull
 {
     int typeId = -1;
     int beginIndex = 0;
     NSArray *newArticles;
+    NSMutableArray *tempAry;
     
     self.catalog = catalogId;
     if (refresh) {
@@ -92,7 +92,17 @@
     beginIndex = self->allArticleCount;
     isLoading = YES;
     newArticles = [self getArticleList:typeId andBeginIndex:beginIndex andEndIndex:page_size];
-    [self.articleAry addObjectsFromArray:newArticles];
+    if (isPull) {
+        // add the new records at the first
+        tempAry = [[NSMutableArray alloc]initWithArray:newArticles];
+        [tempAry addObjectsFromArray:self.articleAry];
+        self.articleAry = tempAry;
+        [tempAry release];
+    } else {
+        // click on the Next Records, add the new records at the last
+        [self.articleAry addObjectsFromArray:newArticles];
+    }
+    
     if ([newArticles count] < page_size) {
         isLoadOver = YES;
     }
@@ -201,7 +211,7 @@
     int row = [indexPath row];
     if (row >= [articleAry count]) {
         if (!isLoading) {
-            [self reloadArticleList:self.catalog andRefresh:NO];
+            [self reloadArticleList:self.catalog andRefresh:NO andIsScrollPull:NO];
         }
     } else {
     
@@ -255,7 +265,8 @@
 //    [self.tableView reloadData];
 //    [self doneLoadingTableViewData];
     isLoadOver = NO;
-    [self reloadArticleList:self.catalog andRefresh:NO];
+    [self reloadArticleList:self.catalog andRefresh:NO andIsScrollPull:YES];
+    [self performSelector:@selector(doneLoadingTableViewData) withObject:nil afterDelay:2.0];
 }
 
 #pragma mark - Release
