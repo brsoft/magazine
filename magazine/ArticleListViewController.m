@@ -90,8 +90,8 @@
     }
     
     beginIndex = self->allArticleCount;
+    isLoading = YES;
     newArticles = [self getArticleList:typeId andBeginIndex:beginIndex andEndIndex:page_size];
-    isLoading = NO;
     if (isPull) {
         // add the new records at the first
         tempAry = [[NSMutableArray alloc]initWithArray:newArticles];
@@ -108,9 +108,9 @@
     }
     
     self->allArticleCount += [newArticles count];
-    isLoading = YES;
     [self.tableView reloadData];
     [self doneLoadingTableViewData];
+    isLoading = NO;
 }
 
 - (void)clear
